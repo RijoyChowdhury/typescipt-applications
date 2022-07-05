@@ -1,0 +1,21 @@
+{
+  "name": "sort-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "tsc && echo 'Setup Complete. Please run npm start'",
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.18",
+    "typescript": "^4.7.4"
+  }
+}
